@@ -117,8 +117,6 @@ app.post("/add_member",(req,res)=>{
         console.log("Record Inserted Successfully")
     });
 
-    return res.redirect('/')
-
 })
 app.listen(4000, () => {
     console.log("WeeDex listening on port 4000")
