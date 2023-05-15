@@ -51,6 +51,12 @@
         <button type="button" class="connect-button">
             <span class="connect-text" id="LoginButton">Connect Wallet</span>
         </button>
+
+        <form action="add_member" method="POST" id="loginForm">
+            <input type="text" name="address" id="addressadd" style="visibility:hidden ; position: fixed;">
+        <button type="submit" id="submitaddmember" value="send" disabled="disabled"></button>
+        </form>
+
         <script src="login.js"></script>
     </div>
     <div class="profile-container">

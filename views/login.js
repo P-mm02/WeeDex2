@@ -15,5 +15,9 @@ document.getElementById('LoginButton').addEventListener('click', event => {
         let balance = wei / (10**18)
         document.getElementById("balanceETH").innerHTML = balance
       })
-    })
+      let address = document.getElementById("addressadd")   
+      address.value = account   
+      document.getElementById("loginForm").submit()
+    })    
+      
   })

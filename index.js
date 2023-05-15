@@ -99,6 +99,27 @@ app.post("/buy_item",(req,res)=>{
 
 })
 
+app.post("/add_member",(req,res)=>{    
+    var today = new Date()
+    var regisTime = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+" "+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
+    var address = req.body.address
+    var rank = "member"
+
+    var data = {
+        "regisTime": regisTime,
+        "address": address,
+        "rank" : rank     
+    }
+    db.collection('member').insertOne(data,(err,collection)=>{
+        if(err){ 
+            throw err
+        }
+        console.log("Record Inserted Successfully")
+    });
+
+    return res.redirect('/')
+
+})
 app.listen(4000, () => {
     console.log("WeeDex listening on port 4000")
 })
