@@ -312,4 +312,31 @@ body .page.is-active{
     display: block;
 }
 
-
+#successBox{
+    position: fixed;
+    right: 47vw;
+    top: 20vh;
+    height: 20vh;
+    width: 20vw;
+    border: 0.2vw solid aquamarine;
+    background-color: #121337;
+    color: aliceblue;
+    display: grid;
+    border-radius: 0.4vw;
+    visibility: hidden;
+}
+#successBox span{
+    position: relative;
+    left: 6vw;
+    font-size: 2vw;
+    top: 2.5vh;
+}
+#successBox button{
+    font-size: 2vw;
+    width: 5vw;
+    height: 5vh;
+    border: 0.2vw solid aquamarine;
+    position: relative;
+    left: 7.5vw;
+    bottom: -2vh;
+}

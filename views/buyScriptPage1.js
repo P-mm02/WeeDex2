@@ -98,6 +98,7 @@ function CloseBuyWindow11(){
     elem.parentNode.removeChild(elem)
     var elem = document.getElementById("span115")
     elem.parentNode.removeChild(elem)
+    
 }
 
 

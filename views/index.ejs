@@ -112,6 +112,7 @@
         <script src="script-profile-container.js"></script>
     </div>
 
+
     <div class="page is-active" data-page="1">
         <section aria-label="events">
             <div class="carousel" data-carousel>
@@ -170,7 +171,7 @@
                 <input type="text" name="price" id="fillprice">
                 <input type="text" name="address" id="filladdress">
                 <input type="text" name="no" id="fillno">
-            <button id="buyButton1">Buy</button>
+            <button id="buyButton1" >Buy</button>
             </form>
             <button id="closeButton1" onclick="CloseBuyWindow11()" >Close</button>            
             <script src="buyScriptPage1.js" defer></script>
@@ -311,7 +312,8 @@
                               
             </div>
             
-            <button type="submit" class="submit-sell" id="submitSell" onclick="submitSellData()">Submit</button>
+            <button type="submit" class="submit-sell" id="submitSell" onclick="submitSellData()">Submit</button>            
+
             <script src="sellScript.js"></script>
             
             
@@ -469,5 +471,9 @@
     </div>
 
     <script src="switch-page.js"></script>
+    <div id="successBox">
+        <span>Success!</span>
+        <button onclick="closeSuccess()">OK</button>
+    </div>
 </body>
 </html>

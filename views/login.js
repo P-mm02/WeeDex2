@@ -18,6 +18,7 @@ document.getElementById('LoginButton').addEventListener('click', event => {
       let address = document.getElementById("addressadd")   
       address.value = account   
       document.getElementById("loginForm").submit()
+      document.getElementById("adreessStore").value=account
     })    
       
   })

@@ -83,3 +83,13 @@ imgInput8.onchange = evt => {
 			previewImg8.src = URL.createObjectURL(file)
 		}	
 }
+
+function submitSellData(){
+	successBox.style.visibility = 'visible'
+}
+function openSuccess(){
+	successBox.style.visibility = 'visible'
+}
+function closeSuccess(){
+	successBox.style.visibility = 'hidden'
+}
