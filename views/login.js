@@ -12,7 +12,7 @@ document.getElementById('LoginButton').addEventListener('click', event => {
         console.log(result)
         let wei = parseInt(result,4);
         let balance = wei / (10**18)
-        console.log(balance + " ETH")
+        document.getElementById("balanceETH").innerHTML = balance
       })
     })
   })
