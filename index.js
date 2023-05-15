@@ -67,7 +67,7 @@ app.post("/sell_regis",(req,res)=>{
         console.log("Record Inserted Successfully")
     });
 
-    return res.redirect('/')
+    return 0
 
 })
 
