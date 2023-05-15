@@ -7,7 +7,8 @@ document.getElementById('LoginButton').addEventListener('click', event => {
       account = accounts[0]
       console.log(account)
       btn.textContent = account
-      document.getElementById("LoginButton").style.fontSize = '0.75vw'
+      document.getElementById("LoginButton").style.fontSize = '0.75vw'        
+
       ethereum.request({method: 'eth_getBalance' , params: [account, 'latest']}).then(result => {
         console.log(result)
         let wei = parseInt(result,4);

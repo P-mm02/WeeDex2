@@ -39,7 +39,17 @@ function BuyWindow12(){
         spanAddress.setAttribute("id","span115")
         spanAddress.innerHTML = "Address: <br>" + data[1].address    
         mainContainer.appendChild(spanAddress)   
-          
+        
+        var inputbuy = document.getElementById('fillname')
+        inputbuy.value = data[1].name
+        inputbuy = document.getElementById('fillgame')
+        inputbuy.value = data[1].gameName
+        inputbuy = document.getElementById('fillprice')
+        inputbuy.value = data[1].price
+        inputbuy = document.getElementById('filladdress')
+        inputbuy.value = data[1].address
+        inputbuy = document.getElementById('fillno')
+        inputbuy.value = data[1].no
     }
 }
 

@@ -1,7 +1,7 @@
 function BuyWindow11(){
     BuyWindowPage1.style.left = '30vw'
     BuyWindowPage1.style.visibility = 'visible'
-
+    
     fetch('itemData.json')
     .then(function(response){
         return response.json()
@@ -39,8 +39,19 @@ function BuyWindow11(){
         spanAddress.setAttribute("id","span115")
         spanAddress.innerHTML = "Address: <br>" + data[0].address    
         mainContainer.appendChild(spanAddress)   
-          
+        
+        var inputbuy = document.getElementById('fillname')
+        inputbuy.value = data[0].name
+        inputbuy = document.getElementById('fillgame')
+        inputbuy.value = data[0].gameName
+        inputbuy = document.getElementById('fillprice')
+        inputbuy.value = data[0].price
+        inputbuy = document.getElementById('filladdress')
+        inputbuy.value = data[0].address
+        inputbuy = document.getElementById('fillno')
+        inputbuy.value = data[0].no
     }
+    
 }
 
 fetch('itemData.json')

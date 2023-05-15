@@ -63,3 +63,7 @@
     opacity: 0.9;
     cursor: pointer;
 }
+.buy-window1 input{
+    visibility: hidden;
+    position: fixed;
+}

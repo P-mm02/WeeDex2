@@ -158,12 +158,18 @@
                 <img src="/image/item list test/01.webp" alt="">
                 <img src="/image/item list test/01.webp" alt="">
             </div>
+            <form action="buy_item" method="POST">
+                <input type="text" name="name" id="fillname">
+                <input type="text" name="game" id="fillgame">
+                <input type="text" name="price" id="fillprice">
+                <input type="text" name="address" id="filladdress">
+                <input type="text" name="no" id="fillno">
             <button id="buyButton1">Buy</button>
+            </form>
             <button id="closeButton1" onclick="CloseBuyWindow11()" >Close</button>            
             <script src="buyScriptPage1.js" defer></script>
             <script src="buyScriptPage12.js" defer></script>
-        </div>        
-        
+        </div>
          
     </div>
 
@@ -238,7 +244,7 @@
             </div>                   
         </div>
         <div class="sell-page" id="SwitchSellPage">
-            <form action="/sell_regis" method="POST">
+            <form action="/sell_regis" method="POST" >
             <div class="contain-image"> 
                 <div class="select-image">
                     <img id="previewImg1" src="/image/sell/add-img.png" class="preview-img">
@@ -292,10 +298,17 @@
                 </div><br>
                 <div class="text-box">                               
                     <input type="text" name="email" placeholder="E-mail:" id="sellEmail">                
-                </div>                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" name="adress" id="adreessStore" placeholder="Wallet Adreess:"  >                 
+                </div> 
+                              
             </div>
+            
             <button type="submit" class="submit-sell" id="submitSell" onclick="submitSellData()">Submit</button>
             <script src="sellScript.js"></script>
+            
+            
             </form>
         </div>                      
         <script src="buy-sellScript.js"></script>        
