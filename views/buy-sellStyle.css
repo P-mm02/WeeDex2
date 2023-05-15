@@ -1,0 +1,226 @@
+.buy-sell-box{
+    width: 30vw;
+    height: 5vh;
+    top: 12vh;
+    left: 25vw;
+    color: aliceblue;
+    font-size: 2vw;
+    background-color:#131d4b;
+    position: fixed;
+    z-index: -2;
+    border: 0.2vw solid #010415;
+    border-radius: 2vh;
+    display: flex;
+    gap: 0.3vw;
+}
+.buy-sell-box button{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    color: aliceblue; 
+    position: relative;
+    font-size: 1vw;
+    background-color: transparent;
+    border-radius: 2vh;
+  
+}
+#SwitchBuy{
+    border: 0.2vw solid aquamarine;
+}
+.buy-page{
+    position: fixed;
+    width: 70vw;
+    height: 75vh;
+    background-color: #131d4b;
+    top: 20vh;
+    left: 8vw;
+    border-radius: 2vh;
+    border: 0.3vh solid aquamarine;
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+}
+.sell-page{
+    position: fixed;
+    width: 70vw;
+    height: 75vh;
+    background-color:#131d4b;
+    top: 20vh;
+    left: 8vw;
+    border-radius: 2vh;
+    border: 0.3vh solid aquamarine;
+    visibility: hidden;
+    
+}
+.buy-page table{
+    top: 5vh;    
+}
+.buy-page table tr td img{
+    width: 16vw;
+    height: 9vw;
+    display: block;
+    margin-left: -1vw;
+    margin-right: 0;
+}
+.buy-page table tr td{
+    width: 16vw;
+    height: 9vw;
+}
+.buy-page table tr td :hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.box-tab{
+    position:fixed;
+    color: aliceblue;
+    top: 88vh;
+    right: 25vw;
+    
+    
+}
+.box-tab span{
+    font-size: 1.2vw;
+    border: 0.2vw solid aqua;
+    padding: 0.3vw 0.7vw;
+    border-radius: 0.2vw;
+}
+.box-tab span:hover{
+    cursor: pointer;
+    background-color: #070d31;
+}
+.img-area {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background: var(--grey);
+	margin-bottom: 30px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.img-area .icon {
+	font-size: 100px;
+}
+.img-area h3 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+.img-area p {
+	color: #999;
+}
+.img-area p span {
+	font-weight: 600;
+}
+.img-area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+.img-area.active:hover::before {
+	opacity: 1;
+}
+.select-image {
+	display: block;
+	width: 8vw;
+    height: 8vw;
+	padding: 16px 0;
+	border-radius: 0.3vw;
+	background: var(--blue);
+	color: #fff;
+	font-size: 16px;
+	
+	
+    
+}
+.select-image:hover {
+	background:#070d31;
+}
+.select-image img{
+    position: relative;
+    top: -2vh;
+    width: inherit;
+    height: inherit;
+    border: 0.2vw solid aquamarine;    
+}
+.select-image input{
+    position: absolute;
+    top: 0vh;
+    margin-left: -7.8vw;
+    color:#131d4b;
+    width: inherit;
+    height: inherit;    
+    cursor: pointer;
+    z-index: +1;
+    opacity: 0;
+}
+
+.text-box{
+    border: 0.2vw solid aquamarine;
+    border-radius: 0.3vw;
+    width: 40vw;
+    background-color: inherit;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 2vw;
+    left: 2vw;
+    
+}
+.text-box input{
+    width: 100%;
+    background-color: #131d4b;
+    font-size: 2vw;
+    color: aliceblue;
+    
+}
+.contain-image{
+    display: flex;
+    position: relative;
+    left: 2vw;
+    top: 1vw;
+}
+.submit-sell{
+    position: relative;
+    width: 15vw;
+    font-size: 2vw;
+    left: 50vw;
+    background-color:#070d31;
+    color: aliceblue;
+    border: 0.2vw solid aquamarine;
+    border-radius: 0.4vw;
+} 
+.submit-sell:hover{
+    background-color:#010415;
+    cursor: pointer;
+}
+
+

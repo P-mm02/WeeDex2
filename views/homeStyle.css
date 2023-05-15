@@ -1,0 +1,142 @@
+.carousel{
+    width: 70vw;
+    height: 40vh;
+    position: fixed;
+    background-color: #131d4b;
+    top: 12vh;
+    left: 8vw;
+    z-index: -1;
+    border: 0.3vh solid aquamarine ;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    
+}
+.carousel .slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;      
+}
+.carousel .slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vh;
+}
+.carousel .slide[data-active]{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+.carousel .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    background-color:black;
+    border: none;
+    font-size: 6vh;
+    color: aquamarine;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    opacity: 0.80;
+
+}
+
+.carousel-button:hover,.carousel-button:focus{
+    color: rgb(64, 238, 238)marine;
+    background-color: rgb(39, 36, 36);
+}
+.carousel-button:focus {
+    outline: 1px solid black;
+  }
+.carousel .carousel-button.prev{
+    left: 0.5vw;    
+}
+.carousel .carousel-button.next{
+    right: 0.5vw;
+}
+.show-box{
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    position: fixed;
+    top: 57vh;
+    left: 8vw;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;   
+    gap: 1vw;    
+}
+.show-box .item-box{
+    position: relative;
+    width: 34vw;
+    height: 40vh;
+    
+
+      
+    
+}
+.show-box .item-box img{    
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    display: block; 
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vh;
+    border: 0.3vh solid aquamarine;     
+}
+.show-box .showmore{
+    position: absolute;
+    right: 0;
+    top: -2.5vh;
+    color: aquamarine;
+    background: 0;
+    font: bold;
+    font-size: 1rem;  
+    border: none;
+    cursor: pointer;
+}
+.show-box .showmore:hover{
+    color: rgb(172, 246, 221);
+}
+.show-box .item-box .info-box{
+    width: 18vw;
+    height: 14vh;
+    background-color: #01061D;
+    opacity: 0.85;
+    position: relative;    
+    display: flex;
+    top: 24vh;
+    left: 1vw;
+    color:aliceblue;
+    justify-content: space-around;
+    font-size: 2vh;
+    border: 0.3vh solid aquamarine;
+    border-radius: 1vh;
+}
+.show-box .item-box .info-box button{
+    position: absolute;
+    bottom: 2vh;
+    width: 10vw;
+    height: 3vh;
+    font: bold;
+    font-size: 2vh;
+    background-color: #01061D;
+    color: aquamarine;
+    border: 0.3vh solid aquamarine; 
+    border-radius: 1vh;
+    cursor: pointer;   
+}
+.show-box .item-box .info-box span{
+    position: relative;
+    top: 2vh;    
+}
+.show-box .item-box .info-box button:hover{
+    background-color: #0c1439;
+}

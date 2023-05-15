@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeeDeX</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <script src="https://kit.fontawesome.com/b5f98614f0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="homeStyle.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>   
+    
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="sidebar">        
+        <ul>
+            <li class="tab is-active"><a data-switcher data-tab="1">
+                <i class="fa-solid fa-house-chimney" ></i>
+                <span>Home</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="2">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Buy&Sell</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="3">
+                <i class="fa-regular fa-clock"></i>
+                <span>History</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="4">
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Verify</span>
+            </a></li>
+            <li class="tab"><a data-switcher data-tab="5">
+                <i class="fa-solid fa-people-roof"></i>
+                <span>Assign</span>
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="container-head">
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search anything" name="q">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <button type="button" class="noti-button">
+            <i class="fa-solid fa-bell"></i>
+            <span class="noti-button-badge">3</span>
+        </button>
+        <button type="button" class="connect-button">
+            <span class="connect-text">0x83260F8b2B3ae25AEb55CbcCBc9A80684404C581</span>
+        </button>
+    </div>
+    <div class="profile-container">
+        <ul>        
+            <li><img class="profile-image">
+                <strong>My Profile</strong>
+            </li>        
+            <li><span class="profile-info">Poomtawee Rompho</span>
+                <div class="stat-info">
+                    <div class="container">
+                        <span class="num" data-val-stat="500">0</span>
+                        <span class="text">Asset</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="400">0</span>
+                        <span class="text">Sold</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="300">0</span>
+                        <span class="text">Bought</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="200">0</span>
+                        <span class="text">Followers</span>
+                    </div>
+                    <div class="container">
+                        <span class="num" data-val-stat="100">0</span>
+                        <span class="text">Following</span>
+                    </div>
+                </div>
+            </li>
+            <li><div class="balance">
+                <span class="text">Your Balance</span>
+                
+                <div class="container-num"><br>
+                    <img src="/image/eth-icon01.png" alt="">
+                    <span class="num" data-val-stat="987.65">0.00</span>
+                    <span class="text">ETH</span>
+                </div>
+            </div>
+            </li>
+            <li>
+                <div class="verify-box">                
+                    <div class="button-box">
+                        <div id="btn"></div> 
+                        <button type="button" class="toggle-verify" onclick="VerifyOn()">On</button>
+                        <button type="button" class="toggle-verify" onclick="VerifyOff()">Off</button>   
+                    </div>
+                    <span class="text">Show Verification</span> 
+                </div>
+            </li>
+        </ul>
+        <script src="script-profile-container.js"></script>
+    </div>
+
+    <div class="page is-active" data-page="1">
+        <section aria-label="events">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#171;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#187;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="/image/slide/slide01.jpg" alt="#1">
+                    </li>
+                    <li class="slide">
+                        <img src="/image/slide/slide02.jpg" alt="#2">
+                    </li>
+                    <li class="slide">
+                        <img src="/image/slide/slide03.jpg_large" alt="#3">
+                    </li>
+                    <li class="slide">
+                        <img src="/image/slide/slide04.avif" alt="#4">
+                    </li>
+                </ul>            
+            </div>
+            <script src="events.js" defer></script> 
+        </section>
+        <section aria-label="show-spon">
+            <div class="show-box" data-carousel>                        
+                    <div class="item-box">
+                        <img src="/image/showBox/showBox01.webp" alt="#1">
+                        <div class="info-box">
+                            <span class="date" id="datePage11">xxxxxxxxxxx <br> (Registeration Time)</span>
+                            <span class="price" id="pricePage11">999 ETH <br> (Price)</span>
+                            <button class="buy" onclick="BuyWindow11()">Buy</button>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <img src="/image/showBox/showBox02.webp" alt="#2">
+                        <div class="info-box">
+                            <span class="date" id="datePage12">xxxxxxxxxxx <br> (Registeration Time)</span>
+                            <span class="price" id="pricePage12">999 ETH <br> (Price)</span>
+                            <button class="buy" onclick="BuyWindow12()">Buy</button>
+                        </div>
+                    </div> 
+                <button class="showmore" >Show more &#187;</button>            
+            </div>
+            
+            <script src="events.js" defer></script>
+             
+        </section>
+        <div class="buy-window1" id="BuyWindowPage1">
+            <link rel="stylesheet" href="buy-window1.css">
+            <div class="buy-window1-img">
+                <img src="/image/item list test/01.webp" alt="">
+                <img src="/image/item list test/01.webp" alt="">
+            </div>
+            <button id="buyButton1">Buy</button>
+            <button id="closeButton1" onclick="CloseBuyWindow11()" >Close</button>            
+            <script src="buyScriptPage1.js" defer></script>
+            <script src="buyScriptPage12.js" defer></script>
+        </div>        
+        
+         
+    </div>
+
+    <div class="page" data-page="2">
+        <link rel="stylesheet" href="buy-sellStyle.css">
+        <div class="buy-sell-box">
+            <button id="SwitchBuy" onclick="BuyPage()">Buy</button>
+            <button id="SwitchSell" onclick="SellPage()">Sell</button>
+        </div>
+        <div class="buy-page" id="SwitchBuyPage">
+            <table>
+                <tr>
+                    <td>
+                        <img src="/image/buy list test/01.webp" alt="" onclick="BuyWindow21()">
+                    </td>
+                    <td>
+                        <img src="/image/buy list test/02.webp" alt="" onclick="BuyWindow22()">
+                    </td>
+                    <td>
+                        <img src="/image/buy list test/11.jpg" alt="" onclick="BuyWindow2()">
+                    </td>
+                    <td>
+                        <img src="/image/buy list test/03.jpg" alt="" onclick="BuyWindow2()">
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/image/buy list test/04.webp" alt="" onclick="BuyWindow2()">
+                    </td>
+                    <td>
+                        <img src="/image/buy list test/05.jpg" alt="" onclick="BuyWindow2()">
+                    </td>
+                    <td>
+                        <img src="/image/buy list test/06.jpg" alt="" onclick="BuyWindow2()">
+                    </td> 
+                    <td>
+                        <img src="/image/buy list test/07.jpg" alt="" onclick="BuyWindow2()">
+                    </td>                   
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/image/buy list test/08.jpg" alt="" onclick="BuyWindow2()">
+                    </td>
+                    <td>
+                        <img src="/image/buy list test/09.jpg" alt="" onclick="BuyWindow2()">
+                    </td>
+                    <td>
+                        <img src="/image/buy list test/10.png" alt="" onclick="BuyWindow2()">
+                    </td> 
+                    <td>
+                        <img src="/image/buy list test/12.webp" alt="" onclick="BuyWindow2()">
+                    </td>                   
+                </tr>                
+            </table>                                
+            <div class="box-tab">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>...</span>
+            </div>
+            <div class="buy-window2" id="BuyWindowPage2">
+                <link rel="stylesheet" href="buy-window2.css">
+                <div class="buy-window2-img">
+                    <img src="/image/item list test/01.webp" alt="">
+                    <img src="/image/item list test/01.webp" alt="">
+                </div>                
+                <button id="buyButton2">Buy</button>
+                <button id="closeButton2" onclick="CloseBuyWindow2()" >Close</button>
+                <script src="buyScriptPage2.js" defer></script>               
+            </div>                   
+        </div>
+        <div class="sell-page" id="SwitchSellPage">
+            <form action="/sell_regis" method="POST">
+            <div class="contain-image"> 
+                <div class="select-image">
+                    <img id="previewImg1" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" name="sellImg1" accept="/image*" id="selectImg1" >
+                </div>
+                <div class="select-image">
+                    <img id="previewImg2" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" name="sellImg2" accept="/image*" id="selectImg2" >
+                </div>
+                <div class="select-image">
+                    <img id="previewImg3" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" accept="/image*" id="selectImg3" >
+                </div>
+                <div class="select-image">
+                    <img id="previewImg4" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" accept="/image*" id="selectImg4" >
+                </div>
+                <div class="select-image">
+                    <img id="previewImg5" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" accept="/image*" id="selectImg5" >
+                </div>
+                <div class="select-image">
+                    <img id="previewImg6" src="/image/sell/add-img.png" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" accept="/image*" id="selectImg6" >
+                </div>
+                <div class="select-image">
+                    <img id="previewImg7" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" accept="/image*" id="selectImg7" >
+                </div>
+                <div class="select-image">
+                    <img id="previewImg8" src="/image/sell/add-img.png" class="preview-img">
+                    <input type="file" accept="/image*" id="selectImg8" >
+                </div>
+            </div>
+            
+            <div class="contain-text"  >                           
+                <div class="text-box">                               
+                    <input type="text" name="name" placeholder="Name:" id="sellName">                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" name="game" placeholder="Game:" id="sellGameName">                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" name="price" placeholder="Price:" id="sellPrice">                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" name="id" placeholder="ID:" id="sellId">                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" name="password" placeholder="Password:" id="sellPassword">                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" name="email" placeholder="E-mail:" id="sellEmail">                
+                </div>                
+            </div>
+            <button type="submit" class="submit-sell" id="submitSell" onclick="submitSellData()">Submit</button>
+            <script src="sellScript.js"></script>
+            </form>
+        </div>                      
+        <script src="buy-sellScript.js"></script>        
+    </div>    
+    <div class="page" data-page="3">
+        <link rel="stylesheet" href="historyStyle.css">        
+        <div class="box">
+            <table class="history-table">
+                <tr>
+                  <th>Txn</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>From</th>
+                  <th>To</th>
+                </tr>
+                <tr>
+                  <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                  <td>2.67 ETH</td>
+                  <td>08/05/2023 23:41</td>
+                  <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                  <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                </tr>
+                <tr>
+                  <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                  <td>2.67 ETH</td>
+                  <td>08/05/2023 23:41</td>
+                  <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                  <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                </tr>
+                <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+                  <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+                  <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+                  <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+                  <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+                  <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+                  <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+                  <tr>
+                    <td class="Txn-link">0xb2f6eb28270f23cf4a3...</td>
+                    <td>2.67 ETH</td>
+                    <td>08/05/2023 23:41</td>
+                    <td>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</td>
+                    <td>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</td>
+                  </tr>
+              </table>
+        </div>
+        <div class="sell-page">
+        </div>
+                 
+    </div>
+
+    <div class="page" data-page="4">
+        <link rel="stylesheet" href="verifyStyle.css">      
+        <div class="container-verify">
+            <div class="contain-text">            
+                <div class="text-box">                               
+                    <input type="text" placeholder="First Name:" >                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" placeholder="Last Name:" >                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" placeholder="Date Of Birth:" >                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" placeholder="Phone Number:" >                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" placeholder="Address:" >                
+                </div><br>
+                <div class="text-box">                               
+                    <input type="text" placeholder="E-mail:" >                
+                </div>
+            </div>
+            <div class="contain-image-verify">
+                <img src="image/kyc_photo169.png" class="select-image-verify" alt=""><br> 
+                <button class="select-image-verify">Yourself holding a valid passport or national ID</button><br>
+                <button class="select-image-verify">Select ID-Card Image</button>                
+            </div>
+            <button class="submit-verify">Submit</button>
+        </div>
+        <div class="sell-page">
+        </div>         
+    </div>
+
+    <div class="page" data-page="5">
+        <link rel="stylesheet" href="assignStyle.css">
+        
+        <div class="assign-box">
+            <div class="container-assign-list">
+                <form action="" class="search-assign">
+                    <input type="text" placeholder="Search Address" name="q">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <span>0xFaEba61EE40C2c945DDB021435e4Bbfaf4b009Ea</span><br>
+                <span>0xc8CeEc4FAE172709A202431BD3BcaB1618F08665</span><br>
+                <span>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</span><br>
+                <span>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</span><br>
+                <span>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span><br>  
+            </div>
+            <div class="assign-info">
+                <input type="text" placeholder="Target Address:"><br>
+                <input type="text" placeholder="Target Name:">
+            </div>
+            <div class="submit-assign">
+                <button style="background-color: darkgoldenrod;">Member</button>
+                <button style="background-color:darkgreen;">Verified Member</button>
+                <button style="background-color:crimson;">Staff</button>
+            </div>
+        </div>                
+    </div>
+
+    <script src="switch-page.js"></script>
+</body>
+</html>

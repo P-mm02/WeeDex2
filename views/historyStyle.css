@@ -1,0 +1,44 @@
+.box button{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    color: aliceblue; 
+    position: relative;
+    font-size: 1vw;
+    background-color: transparent;
+    border-radius: 2vh;
+  
+}
+.box{
+    position: fixed;
+    width: 70vw;
+    height: 85vh;
+    background-color: #131d4b;
+    top: 12vh;
+    left: 8vw;
+    display: flex;
+    justify-content: space-around;
+}
+table {
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    height:inherit;    
+    width: 98%;
+    top: 2%;
+}
+table td,th{
+    border: 0.3vh solid aquamarine;
+    height: 7vh;
+    width: 30vw;
+    border-radius: 0.5vh;
+    initial-letter-align: 1vw;
+    padding-left: 1vw;
+    font-size: 0.6vw;
+}
+.Txn-link:hover{
+    cursor: pointer;
+    color: blue;
+}

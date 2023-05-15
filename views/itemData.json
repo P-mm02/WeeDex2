@@ -1,0 +1,22 @@
+[
+    {
+        "regisTime": "04/05/2023 03:54",
+        "name": "Poomtawee",
+        "gameName": "Axie Infinity",
+        "price": "14.53 ETH",
+        "id": "poomtawee",
+        "password": "12345",
+        "e-mail": "wee@gmail.com",
+        "address": "0xdF321cAF1f224C353243719a552417CF9ECCF0F9"
+    },
+    {
+        "regisTime": "18/04/2023 05:31",
+        "name": "Poomtawee2",
+        "gameName": "Difipet",
+        "price": "3.62 ETH",
+        "id": "poomtawee2",
+        "password": "123456",
+        "e-mail": "wee2@gmail.com",
+        "address": "0x83260F8b2B3ae25AEb55CbcCBc9A80684404C581"
+    }
+]

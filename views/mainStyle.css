@@ -1,0 +1,313 @@
+body{
+    background-color: #01061D;
+}
+* {    
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* a{    
+    text-decoration: none;
+    color: aquamarine;
+    
+
+}
+
+.sidebar {
+    width: 5vw;
+    min-height: 100vh;
+    transition: .3s;
+    overflow: hidden;
+    background-color: #131d4b;
+    position: fixed;
+    top: 12vh;
+    border-radius: 1vh;
+    z-index: +2;
+    
+}
+.sidebar:hover{
+    width: 11.5vw;
+}
+.sidebar:hover ul li a span{
+    opacity: 1;
+    visibility: visible;    
+}
+ul li a{
+    display: flex;
+    padding: 4vh 0.7vw 4vh 1.7vw;
+    background-color: #131d4b;
+    font-size:1.5vw;
+    cursor: pointer;
+}
+ul li a:hover{
+    background-color: #121337;
+       
+}
+ul li a i{
+    width: 10vw;
+
+}
+ul li a span{
+    opacity: 0;
+    visibility: 0;
+    transition: 0.3s ease-in;
+
+}
+.sidebar .tab.is-active a{
+    background-color: #121337;
+}
+.logo{
+background-image: url(/image/logo.png);
+display:inline-flex;
+background-size:contain;
+width: 11vh;
+height:11vh;
+position: fixed;
+top: 0.3vh;
+}
+.container-head{
+    width: 75%;
+    height: 11vh;
+    background-color: #01061D;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 8vw;
+}
+.search-bar{
+    width: 40%;
+    background-color: #131d4b;
+    display: flex;
+    align-items: center;
+    border-radius: 8vh ;
+    padding: 1.5vh 3vw;
+    position: fixed;
+    left: 10vw;
+}
+.search-bar input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    outline: none;
+    font-size: 1vw;
+    color: aliceblue;    
+}
+.search-bar button{
+    border: 0;
+    background: transparent;
+    color: aquamarine;
+    cursor: pointer;
+    font-size: 2vh;
+    position: relative;
+    right: -2vh;
+}
+.search-bar button:hover{
+    color: rgb(255, 255, 255);
+}
+.noti-button{
+    color: aquamarine;
+    width: 3.5vw;
+    height: 3.5vw;
+    position: fixed;
+    right: 40%;
+    background: 0;
+    border: 0.2vw solid aquamarine;    
+    background-color: #131d4b;
+    cursor: pointer;
+    border-radius: 1vh;
+    font-size: 1.75vw;
+}
+.noti-button-badge{
+    color: crimson;
+    position: absolute;
+    right: 0.2vw;
+    bottom: 0vh;
+    font-size: 1vw;
+    font: bold;
+}
+.noti-button:hover{
+    background-color: #27346c;
+}
+.connect-button{
+    position: fixed;
+    color: #c0f4f3;
+    right: 22%;
+    background-color: #131d4b;
+    border: 0.2vw solid aquamarine;    
+    font: bold;
+    width: 17vw;
+    padding: 1.3vh;
+    border-radius: 2vh ;
+    cursor: pointer;
+    font-size: 0.65vw;
+}
+.connect-button:hover{
+    background-color: #27346c;
+}
+.profile-container{
+    background-color: #131d4b ;
+    position: fixed;
+    right: 2.5vw;
+    top: 2vh;
+    width: 17vw;
+    height: 90vh;
+    border-style:groove;
+    border-color: aquamarine;
+    border-radius: 3vh;
+}
+.profile-container strong {
+    color:aliceblue;
+    position: fixed;
+    top: 7vh;
+    right: 5vw;
+    font-size:2.5vw;
+    font: bold;
+}
+.profile-image{
+    background-image: url(/image/profile01.jpg);
+    width: 7vw;
+    height: 7vw;
+    position: fixed;
+    background-size:contain;
+    right: 7.5vw;
+    top: 15vh;
+    border-radius: 50%;
+    border-style: groove;
+    border-color: aquamarine;  
+}
+.profile-info{
+    color:aliceblue;
+    position: fixed;
+    font-size: 1.48vw;
+    right: 4vw;
+    top: 32vh;
+}
+.stat-info{
+    position: fixed;
+    width: 14.5vw;
+    height: 6vh;
+    top: 40vh;
+    right: 3.75vw;
+    
+    display: flex;    
+    justify-content: space-around;
+    gap: 0.2vw;
+    
+}
+.stat-info .container{
+    width: 3vw;
+    height: 3vw;
+    border: 0.3vh solid aquamarine;
+    display: flex;    
+    color: aliceblue;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #01061D;  
+    border-radius: 1vh;  
+}
+.stat-info .container .num{
+    position:relative;
+    font-size: 1vw;
+    top: 0.9vw;    
+}
+.stat-info .container .text{
+    position: absolute;
+    top: 3.5vw;
+    font-size: 0.5vw;
+    font: bold;
+    
+}
+
+.profile-container .balance{
+    width: 14.5vw;
+    height: 20vh;
+    display:flex;
+    position: fixed;
+    top: 50vh;
+    color: aliceblue;
+    right: 4vw;
+    font-size: 1.3vw;  
+}
+.profile-container .balance .container-num{
+    display: flex;
+    position: absolute;
+    top: 5vh;
+    width: 15vw;
+    height: 5vh;
+    border: 0.3vh solid aquamarine;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 1vh;
+    background-color: #01061D;    
+    
+}
+.profile-container .balance .container-num img{
+    width: 1.8vw;
+    height: 1.8vw;
+}
+.profile-container .verify-box{    
+    width: 15vw;
+    height: 4vh;
+    border: 0.3vh solid aquamarine;
+    position: fixed;
+    top: 65vh;
+    right: 3.5vw;
+    border-radius: 1vh;
+    align-items: center;
+    display: flex;
+          
+}
+.profile-container .verify-box .button-box{
+    width: 5vw;
+    height: 100%;
+    background: #01061D;
+    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    position: relative;    
+}
+
+.profile-container .verify-box .button-box button{
+    width: 5vw;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    color: aliceblue; 
+    position: relative;
+    text-align: center;
+    font-size: 1vw; 
+}
+.profile-container .verify-box .button-box #btn{
+    left: 0;
+    top: 0;
+    position:absolute ;
+    width: 2.5vw;
+    height: 100%;
+    border-radius: 1vh;
+    background: rgb(8, 146, 22);    
+    transition: .5s;
+    
+    
+}
+.profile-container .verify-box .text{
+    position: relative;
+    color: aliceblue;
+    left: 1vw;
+    font-size: 1vw;
+}
+
+body .page{
+    display: none;
+}
+body .page.is-active{
+    display: block;
+}
+
+

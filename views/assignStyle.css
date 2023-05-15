@@ -1,0 +1,114 @@
+.assign-box button{
+    width: 50%;
+    height: 100%;
+    border: 0;
+    cursor: pointer;
+    color: aliceblue; 
+    position: relative;
+    font-size: 1vw;
+    background-color: transparent;
+    border-radius: 2vh;
+  
+}
+.assign-box{
+    position: fixed;
+    width: 70vw;
+    height: 85vh;
+    background-color: #131d4b;
+    top: 12vh;
+    left: 8vw;
+    border-radius: 2vh;
+    border: 0.3vh solid aquamarine;
+}
+.container-assign-list{
+    border: 0.1vw solid aquamarine;
+    border-radius: 0.2vw;
+    width: 24vw;
+    height: 70vh;
+    background-color: #0c1539;
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+}
+.search-assign{
+    width: 22.8vw;
+    background-color: #131d4b;
+    display: flex;
+    align-items: center;
+    border-radius: 8vh ;
+    padding: 1.5vh 3vw;
+    position: relative;
+    left: 0.5vw;
+    top: 1vw;
+}
+.search-assign input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    outline: none;
+    font-size: 1vw;
+    color: aliceblue;    
+}
+.search-assign button{
+    border: 0;
+    background: transparent;
+    color: aquamarine;
+    cursor: pointer;
+    font-size: 2vh;
+    position: relative;
+    right: -3vw;
+}
+.search-assign button:hover{
+    color: rgb(255, 255, 255);
+}
+.container-assign-list span{
+    position: relative;
+    color: aliceblue;
+    top: 4vh;
+    left: 1vw;
+}
+.container-assign-list span:hover{
+    cursor: pointer;
+    color: blue;
+}
+.assign-info{
+    border: 0.1vw solid aquamarine;
+    border-radius: 0.4vw;
+    width: 30vw;
+    position: relative;
+    left: 30vw;
+    top: -65vh;
+    height: 10.5vh;
+    background:#0c1539;
+}
+.assign-info input{
+    width: 100%;
+    height: 5vh;
+    background:transparent;
+    outline: none;
+    color: aliceblue;
+    font-size: 1.5vw;
+    position: relative;
+    left: 1vw;
+    border: 0;
+    cursor: default;    
+}
+.submit-assign{
+    position: relative;
+    top: -60vh;
+    left: 30vw;
+    width: 30vw;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 2vh;
+}
+.submit-assign button{
+    border: 0.2vw solid aquamarine;
+    width: 30vw;
+    height: 5vh;
+    color: aliceblue;
+}
+.submit-assign button:hover{
+    opacity: 0.8;
+}
