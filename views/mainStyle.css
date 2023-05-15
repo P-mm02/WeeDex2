@@ -135,15 +135,17 @@ top: 0.3vh;
 .connect-button{
     position: fixed;
     color: #c0f4f3;
-    right: 22%;
+    right: 20.5%;
     background-color: #131d4b;
     border: 0.2vw solid aquamarine;    
     font: bold;
-    width: 17vw;
+    width: 19vw;
     padding: 1.3vh;
     border-radius: 2vh ;
     cursor: pointer;
-    font-size: 0.65vw;
+    font-size: 1.5vw;
+    z-index: +3;
+    /* font-size: 0.65vw; */
 }
 .connect-button:hover{
     background-color: #27346c;
