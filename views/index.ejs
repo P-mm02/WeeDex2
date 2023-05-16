@@ -436,10 +436,13 @@
             </div>
             <div class="contain-image-verify">
                 <img src="image/kyc_photo169.png" class="select-image-verify" alt=""><br> 
-                <button class="select-image-verify" name="img1">Yourself holding a valid passport or national ID</button><br>
-                <button class="select-image-verify" name="img2">Select ID-Card Image</button>                
+                <button class="select-image-verify" >Yourself holding a valid passport or national ID</button><br>
+                <button class="select-image-verify" >Select ID-Card Image</button>
+                <input type="file"  name="img1" id="verifyImg1">
+                <input type="file"  name="img2" id="verifyImg2">                
             </div>
-            <button class="submit-verify" type="submit">Submit</button>
+
+            <button class="submit-verify" type="submit" onclick="openSuccess()">Submit</button>
             </form>
         </div>
         <div class="sell-page">
@@ -455,14 +458,14 @@
                     <input type="text" placeholder="Search Address" name="q">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                <span>0xFaEba61EE40C2c945DDB021435e4Bbfaf4b009Ea</span><br>
-                <span>0xc8CeEc4FAE172709A202431BD3BcaB1618F08665</span><br>
-                <span>0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</span><br>
-                <span>0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</span><br>
-                <span>0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span><br>  
+                <span onclick="listAdress1()" id="listAdress1">0xFaEba61EE40C2c945DDB021435e4Bbfaf4b009Ea</span><br>
+                <span onclick="listAdress2()" id="listAdress2">0xc8CeEc4FAE172709A202431BD3BcaB1618F08665</span><br>
+                <span onclick="listAdress3()" id="listAdress3">0x77F444f13D1f77ed491C12a8217b2A56fBDcAc1C</span><br>
+                <span onclick="listAdress4()" id="listAdress4">0xf3d3dBbF9494bd13239b56CaAcFA0354f23cA6c9</span><br>
+                <span onclick="listAdress5()" id="listAdress5">0xdF321cAF1f224C353243719a552417CF9ECCF0F9</span><br>  
             </div>
             <div class="assign-info">
-                <input type="text" placeholder="Target Address:"><br>
+                <input type="text" placeholder="Target Address:" id="listAdress55"><br>
                 <input type="text" placeholder="Target Name:">
             </div>
             <div class="submit-assign">
@@ -470,7 +473,9 @@
                 <button style="background-color:darkgreen;">Verified Member</button>
                 <button style="background-color:crimson;">Staff</button>
             </div>
-        </div>                
+            <script src="assignScrip.js"></script>
+        </div> 
+
     </div>
 
     <script src="switch-page.js"></script>

@@ -63,3 +63,15 @@
     background-color:#010415;
     cursor: pointer;
 }
+#verifyImg1,#verifyImg2{
+    border: 0.2vw solid aquamarine;
+    width: 20vw;
+    height: 11.25vw;
+    position: absolute;
+    left: 0vw;
+    z-index: +2;
+    visibility: hidden;
+}
+#verifyImg1{
+    top: 23.3vh;
+}
