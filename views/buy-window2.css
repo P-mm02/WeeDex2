@@ -25,6 +25,7 @@
     position: relative;
     left: 1vw;
     font-size: 0.8vw;
+    top: -2.5vh;
 }
 #buyButton2{
     color: aliceblue;

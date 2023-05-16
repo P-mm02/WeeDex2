@@ -118,6 +118,45 @@ app.post("/add_member",(req,res)=>{
     });
     return 0
 })
+
+app.post("/verify",(req,res)=>{    
+    
+    var today = new Date()
+    var regisTime = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+" "+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
+    var firstName = req.body.firstName
+    var lastName = req.body.lastName
+    var birthDate = req.body.birth
+    var pn = req.body.pn
+    var password = req.body.password
+    var email = req.body.email
+    var homeAddress = req.body.homeAddress
+    var address = req.body.address
+    var img1 = req.body.img1
+    var img2 = req.body.img2
+
+    var data = {
+        "regisTime": regisTime,
+        "firstName": firstName,
+        "lastName": lastName,
+        "birthDate": birthDate,
+        "e-mail": email,
+        "homeAddress": homeAddress,        
+        "address": address,
+        "img1": img1,
+        "img2": img2        
+    }
+
+    db.collection('verify').insertOne(data,(err,collection)=>{
+        if(err){
+            throw err
+        }
+        console.log("Record Inserted Successfully")
+    });
+
+    return 0
+
+})
+
 app.listen(4000, () => {
     console.log("WeeDex listening on port 4000")
 })

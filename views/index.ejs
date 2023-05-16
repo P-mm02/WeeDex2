@@ -412,32 +412,35 @@
     <div class="page" data-page="4">
         <link rel="stylesheet" href="verifyStyle.css">      
         <div class="container-verify">
+            <form action="verify" method="POST">
             <div class="contain-text">            
                 <div class="text-box">                               
-                    <input type="text" placeholder="First Name:" >                
+                    <input type="text" placeholder="First Name:" name="firstName">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="Last Name:" >                
+                    <input type="text" placeholder="Last Name:" name="lastName">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="Date Of Birth:" >                
+                    <input type="text" placeholder="Date Of Birth:" name="birth">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="Phone Number:" >                
+                    <input type="text" placeholder="Phone Number:" name="pn">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="Address:" >                
+                    <input type="text" placeholder="Address:" name="้homeAddress">                
                 </div><br>
                 <div class="text-box">                               
-                    <input type="text" placeholder="E-mail:" >                
+                    <input type="text" placeholder="E-mail:" name="email">                
                 </div>
+                    <input type="text" name="address" id="verifyAddress" style="position: fixed; visibility: hidden;">
             </div>
             <div class="contain-image-verify">
                 <img src="image/kyc_photo169.png" class="select-image-verify" alt=""><br> 
-                <button class="select-image-verify">Yourself holding a valid passport or national ID</button><br>
-                <button class="select-image-verify">Select ID-Card Image</button>                
+                <button class="select-image-verify" name="img1">Yourself holding a valid passport or national ID</button><br>
+                <button class="select-image-verify" name="img2">Select ID-Card Image</button>                
             </div>
-            <button class="submit-verify">Submit</button>
+            <button class="submit-verify" type="submit">Submit</button>
+            </form>
         </div>
         <div class="sell-page">
         </div>         

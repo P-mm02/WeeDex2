@@ -5,7 +5,6 @@ document.getElementById('LoginButton').addEventListener('click', event => {
     
     ethereum.request({method: 'eth_requestAccounts'}).then(accounts => {
       account = accounts[0]
-      console.log(account)
       btn.textContent = account
       document.getElementById("LoginButton").style.fontSize = '0.75vw'        
 
@@ -19,6 +18,7 @@ document.getElementById('LoginButton').addEventListener('click', event => {
       address.value = account   
       document.getElementById("loginForm").submit()
       document.getElementById("adreessStore").value=account
+      document.getElementById("verifyAddress").value=account
     })    
       
   })
